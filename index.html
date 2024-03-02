@@ -1,12 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-US">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Initial Commit</title>
+    <title>Gregorio A. Co, Jr. - WDD 230 - Web Frontend Development</title>
+    <meta name="description"
+        content="This is the course assignment portal of Gregorio A. Co, Jr. for WDD 230 - Web Frontend Development.">
+    <meta name="author" content="Gregorio A. Co, Jr.">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Initial Commit</h1>
+    <header>
+        <img src="images/gregorio-co.jpg" alt="Gregorio A. Co, Jr." width="150" height="150">
+        <span>Gregorio A. Co, Jr.</span>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="">Chamber</a></li>
+            <li><a href="">Site Plan</a></li>
+            <li><a href="">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>WDD 230: Web Frontend Development</h1>
+
+        <div class="container">
+            <section class="card">
+                <h2>Learning Activities</h2>
+                <ul class="activities">
+                    <li><a href="#">Week 01:</a>
+                        <ul>
+                            <li><a href="#">Layout</a></li>
+                            <li><a href="#">Media Query</a></li>
+                            <li><a href="#">JS Pen</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Week 02:</a></li>
+                    <li><a href="#">Week 03:</a></li>
+                    <li><a href="#">Week 04:</a></li>
+                    <li><a href="#">Week 05:</a></li>
+                    <li><a href="#">Week 06:</a></li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Information</h2>
+                <p>Imus City, Cavite, Philippines</p>
+                <p>Weather Condition</p>
+                <p>Page Visits:</p>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Gregorio Agustin Co, Jr. | Philippines <img src="images/ph-flag.jpg"
+                alt="PH Flag" width="50"></p>
+        <p id="lastModified">Last Modification: </p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+
 </body>
+
 </html>

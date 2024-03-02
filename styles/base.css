@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    background-color: rgba(10, 40, 110, 0.8);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    border: 1px black;
+    box-shadow: 1px 1px 1px 1px black;
+    margin: 5px;
+}
+
+header span {
+    margin: 10px;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+}
+
+nav {
+    background-color: rgba(52, 52, 55, 0.895);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: .8rem;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    background-color: rgba(80, 76, 76, 0.876);
+}
+
+nav .active {
+    background-color: rgba(79, 67, 67, 0.607);
+}
+
+main {
+    margin: 2rem 1vw;
+}
+
+main h1 {
+    font-size: 1.8rem;
+    padding: 20px;
+    margin-bottom: -40px;
+    align-items: center;
+    color: rgb(23, 4, 4);
+}
+
+.container {
+    margin-top: -40px;
+    margin: 2rem 1vw;
+    padding: 20px;
+}
+
+.container .card {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.container h2 {
+    background-color: rgb(46, 86, 167);
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.activities,
+p {
+    padding: 10px;
+    list-style-type: none;
+}
+
+.card p {
+    text-align: center;
+}
+
+.activities li {
+    margin: 10px;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.activities li a {
+    color: darkblue;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.activities li ul {
+    display: inline;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.activities li ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.activities li ul li a {
+    color: darkgreen;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.activities li ul li:not(:last-child)::after {
+    content: "|";
+    margin-left: 25px;
+    margin-right: 5px;
+    color: darkgreen;
+}
+
+footer {
+    margin-top: -10px;
+    text-align: center;
+    color: white;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+
+footer p:last-child {
+    font-size: .8rem;
+    color: white;
+}
+
+footer img {
+    display: inline;
+    vertical-align: middle;
+}
