@@ -90,7 +90,7 @@ main h1 {
 
 .activities,
 p {
-    padding: 10px;
+    padding: 5px;
     list-style-type: none;
 }
 
@@ -99,7 +99,7 @@ p {
 }
 
 .activities li {
-    margin: 10px;
+    margin: 5px;
     list-style: none;
     margin-bottom: 10px;
 }
@@ -112,13 +112,13 @@ p {
 
 .activities li ul {
     display: inline;
-    padding-left: 20px;
-    margin: 0;
+    padding: 5px;
+    /* margin: 0; */
 }
 
 .activities li ul li {
     display: inline;
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 
 .activities li ul li a {
@@ -129,8 +129,8 @@ p {
 
 .activities li ul li:not(:last-child)::after {
     content: "|";
-    margin-left: 25px;
-    margin-right: 5px;
+    margin-left: 10px;
+    /* margin-right: 5px; */
     color: darkgreen;
 }
 
