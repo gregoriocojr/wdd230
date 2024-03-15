@@ -1,0 +1,41 @@
+/* larger.css */
+
+/* Larger styles for specific elements */
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+/* Adjustments for larger screens */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}

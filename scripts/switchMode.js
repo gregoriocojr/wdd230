@@ -26,9 +26,13 @@ modeButton.addEventListener("click", () => {
             element.style.background = "#444";
             element.style.color = "#fff";
         });
-        main.querySelectorAll("p, a").forEach(element => {
+        main.querySelectorAll("p, a, ul, li").forEach(element => {
             element.style.color = "#fff";
         });
+        main.querySelectorAll(".activities li ul li:not(:last-child)").forEach(element => {
+            element.classList.add("dark-mode");
+        });
+
     } else {
         // Revert back to original styles
         main.style.background = "";
