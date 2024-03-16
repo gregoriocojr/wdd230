@@ -1,41 +1,69 @@
-/* larger.css */
+@media only screen and (min-width: 50rem) {
 
-/* Larger styles for specific elements */
-h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 2.5rem;
-}
-
-h3 {
-    font-size: 2rem;
-}
-
-p {
-    font-size: 1.1rem;
-}
-
-/* Adjustments for larger screens */
-@media screen and (min-width: 768px) {
-    body {
-        font-size: 1.2rem;
+    #menu {
+        display: none;
     }
 
-    h1 {
-        font-size: 4rem;
+    #mode {
+        top: 220px;
     }
 
-    h2 {
-        font-size: 3rem;
+    .navigation {
+        flex-direction: row;
     }
 
-    h3 {
-        font-size: 2.5rem;
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
     }
 
-    p {
-        font-size: 1.2rem;
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav ul li {
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    nav ul li:last-child {
+        margin-right: 0;
+    }
+
+    .events-weather {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        /* column-gap: 5px; */
+    }
+    
+    .events,
+    .weather {
+        padding: 20px;
+        background-color: #f0f0f0;
+        border-radius: 2px;
+    }
+    
+    .spotlights {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* column-gap: 5px; */
+    }
+    
+    .spotlight {
+        flex: 1;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border-radius: 2px;
     }
 }

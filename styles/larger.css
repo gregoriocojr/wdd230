@@ -8,14 +8,14 @@
         top: 220px;
     }
 
-	.navigation {
-		flex-direction: row;
-	}
+    .navigation {
+        flex-direction: row;
+    }
 
-	.navigation a {
-		display: block;
-		flex: 1 1 100%;
-	}
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
 
     nav {
         display: flex;

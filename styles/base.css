@@ -190,7 +190,8 @@ p {
 }
 
 .dark-mode::after {
-    color: #fff; /* Your dark mode color */
+    color: #fff;
+    /* Your dark mode color */
 }
 
 footer {
