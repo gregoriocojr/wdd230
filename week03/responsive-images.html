@@ -1,12 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-US">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gregorio A. Co, Jr. - WDD 230 - Web Frontend Development</title>
+    <meta name="description"
+        content="This is the responsive images page in WDD 230 - Web Frontend Development of Gregorio A. Co, Jr.">
+    <meta name="author" content="Gregorio A. Co, Jr.">
+
+    <link rel="stylesheet" href="styles/responsive-images.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <header>
+        <h1>Responsive Images Demonstration</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="Manila Philippines Temple" width="1500" height="750">
+            </picture>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Gregorio Agustin Co, Jr. | Philippines <img src="images/ph-flag.jpg"
+                alt="PH Flag" width="50"></p>
+        <p id="lastModified">Last Modification: </p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+
 </body>
+
 </html>

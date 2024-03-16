@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgba(10, 40, 110, 0.8);
+    text-align: center;
+    color: whitesmoke;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: rgba(10, 40, 110, 0.8);
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    justify-content: space-between;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+footer p:last-child {
+    font-size: .8rem;
+    color: white;
+}
+
+footer img {
+    display: inline;
+    vertical-align: middle;
+}

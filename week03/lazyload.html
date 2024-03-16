@@ -1,15 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-US">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gregorio A. Co, Jr. - WDD 230 - Web Frontend Development</title>
+    <meta name="description"
+        content="This is the lazy loading page in WDD 230 - Web Frontend Development of Gregorio A. Co, Jr.">
+    <meta name="author" content="Gregorio A. Co, Jr.">
+
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-
-
+        <h1>Lazy Loading Demonstration</h1>
     </header>
+
+    <main>
+        <picture>
+            <img src="images/image-1.jpg" alt="First Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/image-2.jpg" alt="Second Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/image-3.jpg" alt="Third Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/image-4.jpg" alt="Fourth Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/image-5.jpg" alt="Fifth Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/image-6.jpg" alt="Sixth Image" loading="lazy" width="400" height="600">
+        </picture>
+    </main>
 
     <footer>
         <p>&copy;<span id="currentYear"></span> | Gregorio Agustin Co, Jr. | Philippines <img src="images/ph-flag.jpg"
@@ -20,4 +50,5 @@
     <script src="scripts/getDates.js"></script>
 
 </body>
+
 </html>
