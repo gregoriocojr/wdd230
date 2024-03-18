@@ -117,16 +117,45 @@ main {
     margin: 3rem;
 }
 
+.hero {
+	margin: 0;
+	position: relative;
+	border: 2px solid black;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+}
+
+.templeName {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	padding: 1rem;
+	opacity: 1;
+}
+
+.templeName p {
+	margin: 0;
+	padding: .25rem;
+	font-size: 1.5rem;
+    font-family: "Arizonia", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 main h1 {
     font-size: 1.8rem;
     padding: 20px;
-    margin-bottom: -40px;
+    margin-bottom: 5px;
     align-items: center;
     color: rgb(23, 4, 4);
 }
 
 .container {
-    margin-top: -40px;
+    margin-top: 10px;
     margin: 2rem 1vw;
     padding: 20px;
 }
@@ -159,7 +188,7 @@ p {
 .activities li {
     margin: 5px;
     list-style: none;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: darkblue;
     text-decoration: none;
     font-weight: bolder;
@@ -196,7 +225,7 @@ p {
 
 footer {
     background-color: rgba(10, 40, 110, 0.8);
-    margin-top: -10px;
+    margin-top: 5px;
     text-align: center;
     color: white;
     justify-content: space-between;
