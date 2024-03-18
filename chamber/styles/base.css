@@ -124,7 +124,7 @@ main {
 
 .cta {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.8);
@@ -157,6 +157,10 @@ main {
 @media screen and (max-width: 50rem) {
     .cta *:not(.button) {
         display: none;
+    }
+
+    .cta {
+        background-color: none;
     }
 }
 

@@ -114,14 +114,11 @@ nav .active {
 }
 
 main {
-    margin: 3rem;
+    margin: 2rem 3rem 0;
 }
 
 .hero {
-	margin: 0;
-	position: relative;
-	border: 2px solid black;
-    overflow: hidden;
+    position: relative;
 }
 
 .hero img {
@@ -130,17 +127,17 @@ main {
 }
 
 .templeName {
-	position: absolute;
-	top: 5px;
-	left: 5px;
-	padding: 1rem;
-	opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 1rem;
+    opacity: 1;
 }
 
 .templeName p {
-	margin: 0;
-	padding: .25rem;
-	font-size: 1.5rem;
+    margin: 0;
+    padding: .25rem;
+    font-size: 1.5rem;
     font-family: "Arizonia", cursive;
     font-weight: 400;
     font-style: normal;
@@ -148,16 +145,9 @@ main {
 
 main h1 {
     font-size: 1.8rem;
-    padding: 20px;
     margin-bottom: 5px;
     align-items: center;
     color: rgb(23, 4, 4);
-}
-
-.container {
-    margin-top: 10px;
-    margin: 2rem 1vw;
-    padding: 20px;
 }
 
 .card {
@@ -183,6 +173,7 @@ p {
 
 .card p {
     text-align: center;
+    font-weight: 400;
 }
 
 .activities li {
@@ -197,12 +188,10 @@ p {
 .activities li ul {
     display: inline;
     padding: 5px;
-    /* margin: 0; */
 }
 
 .activities li ul li {
     display: inline;
-    /* margin-right: 10px; */
 }
 
 .activities li ul li a {
@@ -220,12 +209,27 @@ p {
 
 .dark-mode::after {
     color: #fff;
-    /* Your dark mode color */
 }
+
+#map {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
+iframe {
+    width: 100%;
+}
+
+.visits {
+    color: navy;
+    font-weight: bold;
+    font-size: large;
+}
+
 
 footer {
     background-color: rgba(10, 40, 110, 0.8);
-    margin-top: 5px;
     text-align: center;
     color: white;
     justify-content: space-between;

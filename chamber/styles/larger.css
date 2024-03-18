@@ -46,20 +46,20 @@
         grid-template-columns: 2fr 1fr;
         /* column-gap: 5px; */
     }
-    
+
     .events,
     .weather {
         padding: 20px;
         background-color: #f0f0f0;
         border-radius: 2px;
     }
-    
+
     .spotlights {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         /* column-gap: 5px; */
     }
-    
+
     .spotlight {
         flex: 1;
         padding: 20px;
