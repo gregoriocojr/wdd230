@@ -262,3 +262,24 @@ footer #name {
     font-weight: bolder;
     font-size: large;
 }
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+picture img {
+    width: 100%;
+    opacity: 0;
+    animation: fade 15s ease forwards;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

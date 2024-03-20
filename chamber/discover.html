@@ -41,29 +41,74 @@
     </nav>
 
     <main>
+        <div class="cards">
+            <div>
+                <h2>Card 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam iure facilis nulla, maxime
+                    ab quibusdam, sunt at dignissimos quasi aut ducimus, harum adipisci cum minima. Ipsam ut porro quia.
+                </p>
+            </div>
 
+            <div>
+                <h2>Card 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam iure facilis nulla, maxime
+                    ab quibusdam, sunt at dignissimos quasi aut ducimus, harum adipisci cum minima. Ipsam ut porro quia.
+                </p>
+            </div>
 
+            <div>
+                <h2>Card 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam iure facilis nulla, maxime
+                    ab quibusdam, sunt at dignissimos quasi aut ducimus, harum adipisci cum minima. Ipsam ut porro quia.
+                </p>
+            </div>
 
-        
+            <div id="calendar"></div>
+
+            <div class="visits">
+                <p>Number of Visits: </p>
+            </div>
+        </div>
+
+        <div class="pictures">
+            <picture>
+                <img src="images/imus-1.jpg" alt="First Image" loading="lazy" width="400">
+            </picture>
+            <picture>
+                <img src="images/imus-2.jpg" alt="Second Image" loading="lazy" width="400">
+            </picture>
+            <picture>
+                <img src="images/imus-3.jpg" alt="Third Image" loading="lazy" width="400">
+            </picture>
+            <picture>
+                <img src="images/imus-4.jpg" alt="Fourth Image" loading="lazy" width="400">
+            </picture>
+            <picture>
+                <img src="images/imus-5.jpg" alt="Fifth Image" loading="lazy" width="400">
+            </picture>
+            <picture>
+                <img src="images/imus-6.jpg" alt="Sixth Image" loading="lazy" width="400">
+            </picture>
+        </div>
     </main>
 
     <footer>
         <div class="contact">
-            <section id="address">
+            <div id="address">
                 <img src="images/city-of-imus.png" alt="Imus City" width="80">
                 <p>
                     <span>Imus Chamber of Commerce</span>
                     <span>Boulevard, Brgy. Malagasang I-G, City of Imus, Cavite</span>
                 </p>
-            </section>
+            </div>
 
-            <section id="site">
+            <div id="site">
                 <p>
                     <a href="https://cityofimus.gov.ph/">https://cityofimus.gov.ph</a>
                 </p>
                 <p>📞(046) 888 9910</p>
                 <p><a href="https://maps.app.goo.gl/KrqiTZHfkuNjCXtK9">📍</a> Location Map</p>
-            </section>
+            </div>
         </div>
 
         <p>&copy;<span id="currentYear"></span> Imus City Chamber | <span id="name">Gregorio Agustin Co, Jr.</span> |
@@ -73,8 +118,10 @@
 
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamMenu.js"></script>
-    <script src="scripts/activePage.js"></script>
+    <script src="scripts/calendar.js"></script>
+    <script src="scripts/lazyLoad.js"></script>
+
 
 </body>
 
-</html
+</html>
