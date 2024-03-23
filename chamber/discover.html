@@ -4,9 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover | Imus Cityt Chamber of Commerce</title>
-    <meta name="description"
-        content="The discover page promotes relavant information about the chamber.">
+    <title>Discover | Imus City Chamber of Commerce</title>
+    <meta name="description" content="The discover page promotes relavant information about the chamber.">
     <meta name="author" content="Gregorio A. Co, Jr.">
 
     <meta property="og:title" content="Imus City Chamber of Commerce">
@@ -48,26 +47,38 @@
                     ab quibusdam, sunt at dignissimos quasi aut ducimus, harum adipisci cum minima. Ipsam ut porro quia.
                 </p>
             </div>
-
+            <hr>
             <div>
                 <h2>Card 2</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam iure facilis nulla, maxime
                     ab quibusdam, sunt at dignissimos quasi aut ducimus, harum adipisci cum minima. Ipsam ut porro quia.
                 </p>
             </div>
-
+            <hr>
             <div>
                 <h2>Card 3</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam iure facilis nulla, maxime
                     ab quibusdam, sunt at dignissimos quasi aut ducimus, harum adipisci cum minima. Ipsam ut porro quia.
                 </p>
             </div>
-
-            <div id="calendar"></div>
-
-            <div class="visits">
-                <p>Number of Visits: </p>
+            <hr>
+            <div id="calendar">
+                <iframe
+                    src="https://calendar.google.com/calendar/embed?height=400&wkst=1&ctz=Asia%2FManila&bgcolor=%23ffffff&showTitle=0&showNav=0&showPrint=0&showCalendars=0&showTabs=0&showTz=0&src=NDNmNzlmNTg2ZGQ4MGE5ODQ3NDZlNTNiZWRhOGFmMWZjZTlmNDI0OGJlN2FjMTFjZDBmZTJhNzI2ZmRmZmNkNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23616161"
+                    style="border:solid 1px #777" width="400" height="400" frameborder="0" scrolling="no"></iframe>
             </div>
+            <hr>
+            <h1>📅 Date Math (Days Between Dates)</h1>
+            <p>See the ⚙️<a href="https://codepen.io/blazzard-jason/pen/ExeBjab" target="_blank">Date.now()
+                    TimeStamp</a> &nbsp; pen for Date.now() information.</p>
+            <hr>
+            <p><span class="label">Date.now(): </span> <span id="today"></span> &nbsp;<span
+                    class="smaller">(milliseconds)</span></p>
+            <p><span class="label">Next Christmas: </span> <span id="christmas"></span> &nbsp; <span
+                    class="smaller">(milliseconds)</span></p>
+            <p><span class="label">🎄Christmas - Date: </span> <span id="christmasDate"></span></p>
+            <hr>
+            <p><span class="label">Days until Christmas: </span> <span id="daysleft"></span></p>
         </div>
 
         <div class="pictures">
@@ -121,6 +132,7 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamMenu.js"></script>
     <script src="scripts/calendar.js"></script>
+    <script src="scripts/visitInfo.js"></script>
 
 
 </body>

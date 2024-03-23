@@ -167,6 +167,11 @@ main {
     .cta {
         background-color: transparent;
     }
+
+    .discover {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .events-weather {
@@ -266,10 +271,26 @@ footer #name {
 .discover {
     display: grid;
     grid-template-columns: 2fr 3fr;
+    grid-column-gap: 40px;
+    margin-top: 20px;
+}
+
+.discover .cards {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    row-gap: 20px;
+}
+
+.pictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .pictures picture img {
     width: 100%;
+    margin: 10px;
     opacity: 0;
     animation: fade 15s ease forwards;
 }
@@ -282,4 +303,12 @@ footer #name {
     to {
         opacity: 1;
     }
+}
+
+.discover .card {
+    margin-top: 10px;
+}
+
+#calendar {
+    align-items: center;
 }

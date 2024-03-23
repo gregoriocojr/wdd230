@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
+document.addEventListener('DOMContentLoaded', function () {
+  var calendarEl = document.querySelector('calendar');
 
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      initialView: 'dayGridMonth', // Display the calendar in the month view initially
-      // Add any other options you want here
-    });
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'dayGridMonth', // Display the calendar in the month view initially
+    // Add any other options you want here
+  });
 
-    calendar.render(); // Render the calendar
+  calendar.render(); // Render the calendar
 });
