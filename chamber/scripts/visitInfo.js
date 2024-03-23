@@ -1,25 +1,25 @@
-// milliseconds to days constant = 1000 ms/s * 60 s/m * 60 m/h * 24 h/day
-const msToDays = 84600000;
-// today's date
-const theDateToday = new Date();
+document.addEventListener('DOMContentLoaded', function () {
+    var currentDate = new Date().getTime();
 
-// initialize display elements
-const todayElement = document.querySelector("#today");
-const christmasElement = document.querySelector("#christmas");
-const christmasDateElement = document.querySelector("#christmasDate");
-const daysElement = document.querySelector("#daysleft");
+    if (localStorage.getItem('lastVisitDate')) {
+        var lastVisitDate = localStorage.getItem('lastVisitDate');
+        lastVisitDate = parseInt(lastVisitDate);
 
-// processing
-const today = Date.now();
-const christmasDate = new Date(Date.UTC(theDateToday.getFullYear(), 11, 25));
-// check if is the waing days of December, if so ... change to next year.
-if (theDateToday.getMonth() == 11 && theDateToday.getDate() > 25) {
-	christmasDate.setFullYear(christmasDate.getFullYear() + 1);
-}
-// find difference between epoch times in ms and convert to days
-let daysleft = (christmasDate.getTime() - Date.now()) / msToDays;
+        var timeDifference = currentDate - lastVisitDate;
+        var oneDay = 1000 * 60 * 60 * 24;
+        var daysDifference = Math.floor(timeDifference / oneDay);
 
-todayElement.textContent = today;
-christmasElement.textContent = christmasDate.getTime();
-christmasDateElement.textContent = christmasDate;
-daysElement.textContent = `${daysleft.toFixed(0)} days`;
+        localStorage.setItem('lastVisitDate', currentDate);
+
+        if (daysDifference === 0) {
+            document.getElementById('message').innerText = "Back so soon! Awesome!";
+        } else if (daysDifference === 1) {
+            document.getElementById('message').innerText = "You last visited 1 day ago.";
+        } else {
+            document.getElementById('message').innerText = "You last visited " + daysDifference + " days ago.";
+        }
+    } else {
+        localStorage.setItem('lastVisitDate', currentDate);
+        document.getElementById('message').innerText = "Welcome! Let us know if you have any questions.";
+    }
+});
