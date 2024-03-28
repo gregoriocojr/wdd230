@@ -295,6 +295,10 @@ footer #name {
     animation: fade 15s ease forwards;
 }
 
+.pictures picture img:hover {
+    box-shadow: 0 0 50px #333;
+}
+
 @keyframes fade {
     from {
         opacity: 0;
