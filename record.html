@@ -25,10 +25,23 @@
     <meta property="fb:app_id" content="your_app_id">
     <!-- <meta name="twitter:site" content="@website-username"> -->
 
+    <style>
+        .ty h1,
+        .ty h2 {
+            color: darkblue;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .ty {
+            height: 400px;
+            margin-top: 80px;
+        }
+    </style>
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
@@ -54,29 +67,9 @@
         </ul>
     </nav>
 
-    <main>
-        <form method="get" action="record.html" class="webform">
-            <h1>Web Form</h1>
-            <fieldset>
-                <legend>Login Details</legend>
-                <label>Username* <input type="text" id="username" name="username" required></label>
-                <label>Password* <input type="text" id="password" name="pass1" required pattern="[a-zA-Z0-9]{8,}"></label>
-                <label>Confirm Password* <input type="text" id="password" name="pass2" required></label>
-                <label>Email* <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$"
-                        title="Please enter a valid email address"></label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Page Rating</legend>
-                <label>Please rate our page (move the button to the desired rating): <input type="range"
-                        name="pageRating" min="1" max="10" step="1" oninput="ratingOutput.value = pageRating.value">
-                    <output for="pageRating" id="ratingOutput"></output></label>
-            </fieldset>
-
-            <input type="submit" value="Record My Response">
-
-        </form>
-
+    <main class="ty">
+        <h1>Thank you!</h1>
+        <h2>Your response has been recorded.</h2>
     </main>
 
     <footer>
