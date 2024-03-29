@@ -10,6 +10,27 @@
     padding-top: 1rem;
 }
 
+.webform div {
+    color: darkred;
+    font-weight: bolder;
+    font-size: x-large;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .webform fieldset {
     margin: 2rem 0;
     border: 1px solid #ddd;
