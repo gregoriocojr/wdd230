@@ -52,6 +52,7 @@
 }
 
 .webform input[type="text"],
+.webform input[type="password"],
 .webform input[type="email"] {
     background-color: var(--background-color);
     display: block;
