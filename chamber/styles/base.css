@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #9ee2de;
+    --secondary-color: #f0f0f0;
+    --text-color: #000;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,15 +11,16 @@
 }
 
 header {
-    background-color: #9ee2de;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: var(--text-color);
 }
 
 header img {
-    border: 1px black;
+    border: 1px solid black;
+    /* Corrected the border property */
     box-shadow: 1px 1px 1px 1px black;
     margin: 15px;
 }
@@ -184,7 +191,7 @@ main {
 .events,
 .weather {
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: var(--secondary-color);
     border-radius: 2px;
 }
 
@@ -198,7 +205,7 @@ main {
 .spotlight {
     flex: 1;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: var(--secondary-color);
     border-radius: 2px;
 }
 
@@ -208,7 +215,7 @@ main {
 }
 
 footer {
-    background-color: #9ee2de;
+    background-color: var(--primary-color);
     margin-top: 10px;
     text-align: center;
     color: #292F36;
@@ -242,7 +249,7 @@ footer {
 }
 
 #address p span:first-child {
-    color: black;
+    color: var(--text-color);
     font-weight: bolder;
     font-size: large;
 }
@@ -263,7 +270,7 @@ footer p:last-child {
 }
 
 footer #name {
-    color: black;
+    color: var(--text-color);
     font-weight: bolder;
     font-size: large;
 }
@@ -315,4 +322,154 @@ footer #name {
 
 #calendar {
     align-items: center;
+}
+
+.ty {
+    text-align: center;
+    height: 300px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.ty h1 {
+    color: darkblue;
+}
+
+.ty h2 {
+    color: darkcyan;
+}
+
+.join {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.formContainer {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.benefitsContainer {
+    flex: 1;
+    display: none;
+    margin-top: 80px;
+    max-width: 600px;
+    justify-content: flex-start;
+}
+
+.formChamber {
+    max-width: 600px;
+}
+
+.formChamber h1 {
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-bottom: -20px;
+    color: darkblue;
+}
+
+.membershipBenefits h2 {
+    text-align: left;
+    color: darkblue;
+}
+
+.formChamber legend,
+.membershipLevel h3 {
+    color: #2d4286;
+    padding: 0 .5rem;
+    font-weight: bolder;
+}
+
+.formChamber fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.formChamber label,
+.formChamber div,
+.formChamber textarea {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .9rem;
+}
+
+.formChamber .membership label {
+    color: #6f200e;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.formChamber input[type="radio"] {
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.formChamber input[type="text"],
+.formChamber input[type="tel"],
+.formChamber input[type="email"],
+.formChamber textarea {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    padding: .75rem;
+    color: #000;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.formChamber input[type="radio"] {
+    margin-right: 6px;
+}
+
+.formChamber input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#286352, #236b52);
+    color: whitesmoke;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.formChamber input:required {
+    border-bottom: solid 5px darkcyan;
+}
+
+.formChamber input:required:valid {
+    border-bottom: solid 5px darkgreen;
+}
+
+.membershipBenefits {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.membershipLevel {
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.membershipLevel ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.membershipLevel li {
+    margin-left: 10px;
+    display: block;
+    padding-top: .5rem;
+    color: #9c2c13;
+    font-size: .9rem;
 }

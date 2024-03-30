@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imus City Chamber of Commerce</title>
+    <meta name="description"
+        content="Welcome to the Imus City Chamber of Commerce website. Join us today to grow your business.">
+    <meta name="author" content="Gregorio A. Co, Jr.">
+
+    <meta property="og:title" content="Imus City Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cityofimus.gov.ph/Media/newcityhall.jpg">
+    <meta property="og:url" content="https://gregoriocojr.github.io/wdd230/">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/imus-city-seal.png" alt="Imus City Seal" width="120">
+        <h1>Imus City Chamber of Commerce</h1>
+    </header>
+
+    <button id="menu"></button>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="">Directory</a></li>
+            <li class="active"><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main class="join">
+        <div class="formContainer">
+            <form method="get" action="thankyou.html" class="formChamber">
+                <h1>Registration Form</h1>
+                <div id="validationMessage"></div>
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                    <label>Title or Position <input type="text" name="title" id="title" pattern="^[a-zA-Z -]{7,}$"
+                            title="Minimum 7 characters, alphabets, hyphens, and spaces only."></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contact Details</legend>
+                    <label>Email Address* <input type="email" name="email" id="email" required
+                            placeholder="example@example.com" title="Please enter a valid email address"></label>
+                    <label>Contact Number* <input type="tel" name="contact" id="contact" placeholder="1235551234"
+                            title="Please enter a valid contact number" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Membership Details</legend>
+                    <label>Name of Business or Organization* <input type="text" name="bname" id="bname"
+                            required></label>
+                    <div class="membership">Membership*
+                        <label><input type="radio" name="membership" value="np"> Non-profit Membership</label>
+                        <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                        <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                        <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                    </div>
+                    <label>Description of Business or Organization<textarea name="description"
+                            id="description"></textarea></label>
+                </fieldset>
+
+                <input type="submit" value="Send My Registration">
+
+                <input type="hidden" name="timestamp" id="timestamp" value="">
+
+                <script>
+                    document.getElementById("timestamp").value = new Date().toISOString();
+                </script>
+            </form>
+        </div>
+
+        <div class="benefitsContainer">
+            <div class="membershipBenefits">
+                <h2>Membership Benefits</h2>
+
+                <div class="membershipLevel">
+                    <h3>NP Membership (Non-Profit Organizations)</h3>
+                    <ul>
+                        <li><strong>Cost:</strong> Free</li>
+                        <li><strong>Benefits:</strong>
+                            <ul>
+                                <li>Access to exclusive networking events tailored for non-profit organizations.</li>
+                                <li>Opportunity for free training sessions on fundraising and marketing strategies.</li>
+                                <li>Recognition on the organization's website as a valued non-profit partner.</li>
+                                <li>Priority access to apply for grant opportunities and funding initiatives.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="membershipLevel">
+                    <h3>Bronze Membership</h3>
+                    <ul>
+                        <li><strong>Cost:</strong> ₱2,000.00/month</li>
+                        <li><strong>Benefits:</strong>
+                            <ul>
+                                <li>10% discount on all organization events and workshops.</li>
+                                <li>Quarterly newsletter featuring industry insights and member spotlights.</li>
+                                <li>Priority listing in the organization's directory with a link to your website.</li>
+                                <li>Access to members-only online forums for networking and collaboration.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="membershipLevel">
+                    <h3>Silver Membership</h3>
+                    <ul>
+                        <li><strong>Cost:</strong> ₱5,000.00/month</li>
+                        <li><strong>Benefits:</strong>
+                            <ul>
+                                <li>20% discount on all organization events and workshops.</li>
+                                <li>Dedicated feature article on the organization's website or newsletter.</li>
+                                <li>Exclusive access to VIP events and networking receptions.</li>
+                                <li>Priority placement for advertising opportunities on the organization's homepage.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="membershipLevel">
+                    <h3>Gold Membership</h3>
+                    <ul>
+                        <li><strong>Cost:</strong> ₱10,000.00/month</li>
+                        <li><strong>Benefits:</strong>
+                            <ul>
+                                <li>Complimentary access to all organization events and workshops.</li>
+                                <li>Personalized consultation sessions with industry experts.</li>
+                                <li>Featured sponsorship spot at one major event annually.</li>
+                                <li>Top-tier recognition on the organization's homepage with logo display and link.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <div id="address">
+                <img src="images/city-of-imus.png" alt="Imus City" width="80">
+                <p>
+                    <span>Imus Chamber of Commerce</span>
+                    <span>Boulevard, Brgy. Malagasang I-G, City of Imus, Cavite</span>
+                </p>
+            </div>
+
+            <div id="site">
+                <p>
+                    <a href="https://cityofimus.gov.ph/">https://cityofimus.gov.ph</a>
+                </p>
+                <p>📞(046) 888 9910</p>
+                <p><a href="https://maps.app.goo.gl/KrqiTZHfkuNjCXtK9">📍</a> Location Map</p>
+            </div>
+        </div>
+
+        <p>&copy;<span id="currentYear"></span> Imus City Chamber | <span id="name">Gregorio Agustin Co, Jr.</span> |
+            WDD 230 Project</p>
+        <p id="lastModified">Last Modification: </p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamMenu.js"></script>
+    <script src="scripts/formValidation.js"></script>
+
+</body>
+
+</html>
