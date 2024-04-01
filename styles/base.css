@@ -171,9 +171,26 @@ p {
     list-style-type: none;
 }
 
-.card p {
+.card p,
+.card span,
+.card figure {
     text-align: center;
     font-weight: 400;
+}
+
+.temp > #current-temp {
+    color: darkblue
+}
+
+figcaption {
+    color: darkblue;
+    font-size: .9rem;
+    font-style: italic;
+}
+
+#weather-icon, figcaption {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .activities li {

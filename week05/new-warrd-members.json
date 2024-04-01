@@ -1,0 +1,152 @@
+[
+    {
+        "family_name": "Santos",
+        "move_in_date": "2023-08-20",
+        "num_people": 4,
+        "visited_by_bishopric": true,
+        "family_members": [
+            {
+                "name": "Juan Santos",
+                "gender": "male",
+                "birthdate": "1976-05-10"
+            },
+            {
+                "name": "Maria Santos",
+                "gender": "female",
+                "birthdate": "1979-11-25"
+            },
+            {
+                "name": "Pedro Santos",
+                "gender": "male",
+                "birthdate": "2005-03-15"
+            },
+            {
+                "name": "Luz Santos",
+                "gender": "female",
+                "birthdate": "2010-08-02"
+            }
+        ]
+    },
+    {
+        "family_name": "Gonzales",
+        "move_in_date": "2024-02-12",
+        "num_people": 3,
+        "visited_by_bishopric": false,
+        "family_members": [
+            {
+                "name": "Antonio Gonzales",
+                "gender": "male",
+                "birthdate": "1982-09-08"
+            },
+            {
+                "name": "Rosa Gonzales",
+                "gender": "female",
+                "birthdate": "1985-04-14"
+            },
+            {
+                "name": "Elena Gonzales",
+                "gender": "female",
+                "birthdate": "2012-11-30"
+            }
+        ]
+    },
+    {
+        "family_name": "Ramos",
+        "move_in_date": "2023-11-05",
+        "num_people": 5,
+        "visited_by_bishopric": true,
+        "family_members": [
+            {
+                "name": "Jose Ramos",
+                "gender": "male",
+                "birthdate": "1973-06-20"
+            },
+            {
+                "name": "Ana Ramos",
+                "gender": "female",
+                "birthdate": "1977-01-12"
+            },
+            {
+                "name": "Carlos Ramos",
+                "gender": "male",
+                "birthdate": "2001-09-03"
+            },
+            {
+                "name": "Isabel Ramos",
+                "gender": "female",
+                "birthdate": "2004-12-18"
+            },
+            {
+                "name": "Miguel Ramos",
+                "gender": "male",
+                "birthdate": "2017-04-25"
+            }
+        ]
+    },
+    {
+        "family_name": "Torres",
+        "move_in_date": "2023-10-30",
+        "num_people": 6,
+        "visited_by_bishopric": false,
+        "family_members": [
+            {
+                "name": "Juanito Torres",
+                "gender": "male",
+                "birthdate": "1965-12-08"
+            },
+            {
+                "name": "Lorna Torres",
+                "gender": "female",
+                "birthdate": "1970-07-16"
+            },
+            {
+                "name": "Ramon Torres",
+                "gender": "male",
+                "birthdate": "1995-03-22"
+            },
+            {
+                "name": "Carmen Torres",
+                "gender": "female",
+                "birthdate": "1998-10-10"
+            },
+            {
+                "name": "Josefina Torres",
+                "gender": "female",
+                "birthdate": "2001-05-29"
+            },
+            {
+                "name": "Manuel Torres",
+                "gender": "male",
+                "birthdate": "2010-08-07"
+            }
+        ]
+    },
+    {
+        "family_name": "Del Rosario",
+        "move_in_date": "2024-01-15",
+        "num_people": 4,
+        "visited_by_bishopric": true,
+        "family_members": [
+            {
+                "name": "Ricardo Del Rosario",
+                "gender": "male",
+                "birthdate": "1979-03-12"
+            },
+            {
+                "name": "Sofia Del Rosario",
+                "gender": "female",
+                "birthdate": "1982-08-27"
+            },
+            {
+                "name": "Diego Del Rosario",
+                "gender": "male",
+                "birthdate": "2007-11-05"
+            },
+            {
+                "name": "Carmela Del Rosario",
+                "gender": "female",
+                "birthdate": "2012-04-20"
+            }
+        ]
+    }
+]
