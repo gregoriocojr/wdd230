@@ -4,9 +4,6 @@ const captionDesc = document.querySelector('figcaption');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=imperial&appid=1268a4bd7e5398389954d519508cc81a';
 
-// url pattern: https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
-// my appid: 1268a4bd7e5398389954d519508cc81a
-
 function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp}&deg;F`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
