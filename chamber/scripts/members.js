@@ -1,5 +1,5 @@
-const baseURL = "https://gregoriocojr.github.io/wdd230/";
-const linksURL = "https://gregoriocojr.github.io/wdd230/data/members.json";
+const baseURL = "https://gregoriocojr.github.io/wdd230/chamber";
+const linksURL = "https://gregoriocojr.github.io/wdd230/chamber/data/members.json";
 const weeklyActivitiesDiv = document.getElementById("directory");
 
 const displayLinks = (weeks) => {
