@@ -1,26 +1,42 @@
 const baseURL = "https://gregoriocojr.github.io/wdd230/chamber";
 const linksURL = "https://gregoriocojr.github.io/wdd230/chamber/data/members.json";
-const weeklyActivitiesDiv = document.getElementById("directory");
+const directory = document.querySelector(".directory");
 
-const displayLinks = (weeks) => {
-    weeks.forEach((weekData) => {
-        let weekText = document.createElement('p');
-        weekText.classList.add('week-heading');
-        let activities = weekData.links.map(link => `<a href="${link.url}" target="_blank">${link.title}</a>`).join('<span class="separator"> | </span>');
-        weekText.innerHTML = `<span class="week-name">${weekData.week}:</span> ${activities}`;
-        weeklyActivitiesDiv.appendChild(weekText);
+const displayMembers = (members) => {
+    members.forEach((member) => {
+        let memberCard = document.createElement('section');
+        let mName = document.createElement('h2');
+        let logo = document.createElement('img');
+        let mAdd = document.createElement('p');
+        let mContact = document.createElement('p');
+        let mWebsite = document.createElement('a');
+
+        mName.textContent = member.name;
+        logo.src = `${baseURL}/${member.logo}`;
+        mAdd.textContent = member.address;
+        mContact.textContent = member.contact;
+        mWebsite.textContent = member.url;
+        mWebsite.href = member.url;
+
+        memberCard.appendChild(logo);
+        memberCard.appendChild(mName);
+        memberCard.appendChild(mAdd);
+        memberCard.appendChild(mContact);
+        memberCard.appendChild(mWebsite);
+
+        directory.appendChild(memberCard);
     });
 }
 
-async function getLinks() {
+async function getMembers() {
     try {
         const response = await fetch(linksURL);
         const data = await response.json();
-        console.table(data.members);
-        // displayLinks(data.weeks);
+        displayMembers(data.members);
+        // console.table(data.members);
     } catch (error) {
         console.error("Error fetching data:", error);
     }
 }
 
-getLinks();
+getMembers();
