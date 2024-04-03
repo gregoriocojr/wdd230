@@ -5,7 +5,7 @@ const directory = document.querySelector(".directory");
 const displayMembers = (members) => {
     members.forEach((member) => {
         let memberCard = document.createElement('section');
-        let mName = document.createElement('h2');
+        let mName = document.createElement('h3');
         let logo = document.createElement('img');
         let mAdd = document.createElement('p');
         let mContact = document.createElement('p');
@@ -20,8 +20,9 @@ const displayMembers = (members) => {
         mName.textContent = member.name;
         mAdd.textContent = member.address;
         mContact.textContent = member.contact;
-        mWebsite.textContent = member.url;
+        mWebsite.textContent = `Visit Website`;
         mWebsite.href = member.url;
+        mWebsite.target = '-blank';
 
         memberCard.appendChild(logo);
         memberCard.appendChild(mName);
