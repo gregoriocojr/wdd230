@@ -11,12 +11,12 @@ const displayMembers = (members) => {
         let mContact = document.createElement('p');
         let mWebsite = document.createElement('a');
 
-        logo.setAttribute('src', member.logo);
+        logo.setAttribute('src', `${baseURL}/${member.logo}`);
         logo.setAttribute('alt', `Logo of ${member.name}`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '120');
         logo.setAttribute('height', 'auto')
-        
+
         mName.textContent = member.name;
         mAdd.textContent = member.address;
         mContact.textContent = member.contact;
