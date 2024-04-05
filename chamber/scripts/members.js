@@ -46,3 +46,16 @@ async function getMembers() {
 }
 
 getMembers();
+
+
+const toggleMenu = document.querySelector('.toggle-menu');
+
+directory.classList.add('grid');
+
+toggleMenu.addEventListener('click', function (event) {
+    if (event.target.tagName === 'BUTTON') {
+        const isGrid = event.target.id === 'grid';
+        directory.classList.toggle('grid', isGrid);
+        directory.classList.toggle('list', !isGrid);
+    }
+});

@@ -475,6 +475,26 @@ footer #name {
 }
 
 /* start of directory */
+.toggle-menu {
+    margin: 1rem auto;
+    padding: .5rem;
+    text-align: center;
+}
+
+.toggle-menu button {
+    color: darkblue;
+    font-weight: bold;
+    padding: 10px;
+    margin: auto 5px;
+    border: 1px solid rgb(61, 49, 49);
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-menu button:hover {
+    color: green;
+    transform: scale(1.1);
+}
 
 .directory {
     display: grid;
@@ -482,7 +502,7 @@ footer #name {
     padding: 10px;
 }
 
-.directory section {
+section {
     margin: 0.25rem;
     padding: 0.35rem;
     background-color: #eee;
@@ -503,6 +523,27 @@ footer #name {
 .directory p {
     padding: 4px;
     text-align: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: auto;
+    justify-content: center;
+}
+
+.list section {
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list img {
+    display: none;
+}
+
+.list section:nth-child(even) {
+    background-color: white;
 }
 
 /* end of directory */
