@@ -195,6 +195,33 @@ main {
     border-radius: 2px;
 }
 
+.current-weather {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.current-weather .temp,
+.current-weather .icon,
+.current-weather .desc {
+    margin: 0 10px;
+}
+
+.current-weather .desc {
+    font-style: italic;
+}
+
+.three-day-forecast {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast-item {
+    margin: 0 10px;
+    font-style: italic;
+}
+
+
 .spotlights {
     display: inline;
     text-align: center;

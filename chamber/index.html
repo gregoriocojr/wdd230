@@ -59,11 +59,16 @@
 
             <section class="weather">
                 <h2>Weather</h2>
-                <p class="forecast">Weather forecast for the area: <span id="today-temp"></span></p>
-                <figure>
-                    <img id="weather-icon" src="https://openweathermap.org/img" alt="weather api icon">
-                    <figcaption></figcaption>
-                </figure>
+                <div class="current-weather">
+                    <p id="today-temp" class="temp"></p>
+                    <img id="weather-icon" class="icon" src="https://openweathermap.org/img" alt="weather api icon">
+                    <p id="weather-desc" class="desc"></p>
+                </div>
+                <div class="three-day-forecast">
+                    <div id="day1" class="forecast-item"></div>
+                    <div id="day2" class="forecast-item"></div>
+                    <div id="day3" class="forecast-item"></div>
+                </div>
             </section>
         </div>
 
@@ -109,6 +114,7 @@
 
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamMenu.js"></script>
+    <script src="scripts/weatherForChamber"></script>
 
 </body>
 
