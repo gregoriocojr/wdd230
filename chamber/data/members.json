@@ -8,7 +8,8 @@
             "logo": "images/top-notch-logo.png",
             "membership": "gold",
             "year_established": 2011,
-            "employees": "201-500"
+            "employees": "201-500",
+            "ad": "Building dreams, one brick at a time. Get your free construction estimate now!"
         },
         {
             "name": "Home Team Pest Defense",
@@ -16,9 +17,10 @@
             "contact": "+63466837809",
             "url": "http://www.htpestdefense.com",
             "logo": "images/home-team-logo.jpg",
-            "membership": "bronze",
+            "membership": "silver",
             "year_established": 2009,
-            "employees": "6-10"
+            "employees": "6-10",
+            "ad": "Say goodbye to pests! Protect your home with our expert pest defense solutions."
         },
         {
             "name": "Virtual Assistance by Marichu Bartolo",
@@ -28,7 +30,8 @@
             "logo": "images/va-bartolo-logo.png",
             "membership": "bronze",
             "year_established": 2019,
-            "employees": "1-5"
+            "employees": "1-5",
+            "ad": "Efficient virtual assistance tailored to your needs. Let's lighten your workload together!"
         },
         {
             "name": "Brimestone Academy INC.",
@@ -38,7 +41,8 @@
             "logo": "images/brimestone-logo.jpg",
             "membership": "non-profit",
             "year_established": "-",
-            "employees": "-"
+            "employees": "-",
+            "ad": "Empowering minds, shaping futures. Join us in making education accessible to all."
         },
         {
             "name": "Ellacom Network and Data Solution",
@@ -46,9 +50,10 @@
             "contact": "+639175862965",
             "url": "https://ellacomsolution.wixsite.com/ellacom/",
             "logo": "images/ellacom-logo.png",
-            "membership": "bronze",
+            "membership": "silver",
             "year_established": 2020,
-            "employees": "6-10"
+            "employees": "6-10",
+            "ad": "Unlock the potential of your network. Reliable solutions for seamless connectivity."
         },
         {
             "name": "Philippine SEO Expert | Lea Faye Sahagun",
@@ -58,7 +63,8 @@
             "logo": "images/pinoy-seo-logo.png",
             "membership": "bronze",
             "year_established": 2023,
-            "employees": "1-5"
+            "employees": "1-5",
+            "ad": "Boost your online presence with expert SEO strategies. Dominate search results now!"
         },
         {
             "name": "Rubber & Industrial Construction Philippines",
@@ -66,9 +72,10 @@
             "contact": "+639190789987",
             "url": "https://www.rubbersupplierphils.com/",
             "logo": "images/rubber-supplier-logo.webp",
-            "membership": "silver",
+            "membership": "gold",
             "year_established": 1989,
-            "employees": "26-50"
+            "employees": "26-50",
+            "ad": "Your trusted partner in industrial solutions. Quality rubber products for every need."
         },
         {
             "name": "BizLab IT Solutions",
@@ -78,7 +85,8 @@
             "logo": "images/bizlab-logo.png",
             "membership": "silver",
             "year_established": 2008,
-            "employees": "6-10"
+            "employees": "6-10",
+            "ad": "Innovative IT solutions tailored to propel your business forward. Let's grow together!"
         }
     ]
 }
