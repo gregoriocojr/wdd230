@@ -1,4 +1,3 @@
-const baseURL = "https://gregoriocojr.github.io/wdd230";
 const linksURL = "https://gregoriocojr.github.io/wdd230/chamber/data/events.json";
 const events = document.querySelector(".events");
 
@@ -12,7 +11,7 @@ const displayEvents = (events) => {
         let eFee = document.createElement('p');
         let eDesc = document.createElement('p');
 
-        eImg.setAttribute('src', `${baseURL}/${event.image}`);
+        eImg.setAttribute('src', `https://gregoriocojr.github.io/wdd230/${event.image}`);
         eImg.setAttribute('alt', `Logo of ${event.image}`);
         eImg.setAttribute('loading', 'lazy');
         eImg.setAttribute('width', '400');
