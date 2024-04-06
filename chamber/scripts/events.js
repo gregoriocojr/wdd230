@@ -1,3 +1,4 @@
+const baseEvents = "https://gregoriocojr.github.io/wdd230";
 const linkEvents = "https://gregoriocojr.github.io/wdd230/chamber/data/events.json";
 const eventsContainer = document.querySelector(".events");
 
@@ -11,11 +12,11 @@ const displayEvents = (eventList) => {
         let eFee = document.createElement('p');
         let eDesc = document.createElement('p');
 
-        eImg.src = `https://gregoriocojr.github.io/wdd230/${event.image}`;
-        eImg.alt = `Logo of ${event.image}`;
-        eImg.loading = 'lazy';
-        eImg.width = '400';
-        eImg.height = 'auto';
+        eImg.setAttribute('src', `${baseEvents}/${event.image}`);
+        eImg.setAttribute('alt', 'Imgae of the Event');
+        eImg.setAttribute('loading', 'lazy');
+        eImg.setAttribute('width', '400');
+        eImg.setAttribute('height', 'auto');
 
         eTitle.textContent = event.title;
         eSched.textContent = event.sched;
@@ -38,7 +39,8 @@ async function getEvents() {
     try {
         const response = await fetch(linkEvents);
         const data = await response.json();
-        displayEvents(data.members);
+        displayEvents(data.events);
+        // console.log(data.events);
     } catch (error) {
         console.error("Error fetching data:", error);
     }
