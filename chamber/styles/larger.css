@@ -44,28 +44,27 @@
     .events-weather {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        /* column-gap: 5px; */
     }
 
     .events,
     .weather {
         padding: 20px;
         background-color: #f0f0f0;
-        border-radius: 2px;
+        border-radius: 8px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .spotlights {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        /* column-gap: 5px; */
     }
 
-    .spotlight {
+    /* .spotlight {
         flex: 1;
         padding: 20px;
         background-color: #f0f0f0;
         border-radius: 2px;
-    }
+    } */
 
     .benefitsContainer {
         display: block;

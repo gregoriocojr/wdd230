@@ -2,14 +2,19 @@ const baseURL = "https://gregoriocojr.github.io/wdd230/chamber";
 const linksURL = "https://gregoriocojr.github.io/wdd230/chamber/data/members.json";
 const spotlights = document.querySelector(".spotlights");
 
+let currentIndex = 0;
+
 const displaySpotlights = (members) => {
-    members.forEach((member) => {
+    spotlights.innerHTML = '';
+
+    for (let i = 0; i < 3; i++) {
+        const index = (currentIndex + i) % members.length;
+        let member = members[index];
+
         let spotlightCard = document.createElement('section');
-        let mName = document.createElement('h3');
         let logo = document.createElement('img');
         let mAd = document.createElement('p');
-        // let mContact = document.createElement('p');
-        // let mWebsite = document.createElement('a');
+        let mWebsite = document.createElement('a');
 
         logo.setAttribute('src', `${baseURL}/${member.logo}`);
         logo.setAttribute('alt', `Logo of ${member.name}`);
@@ -17,29 +22,38 @@ const displaySpotlights = (members) => {
         logo.setAttribute('width', '120');
         logo.setAttribute('height', 'auto')
 
-        mName.textContent = member.name;
         mAd.textContent = member.ad;
-        // mContact.textContent = member.contact;
-        // mWebsite.textContent = `Visit Website`;
-        // mWebsite.href = member.url;
-        // mWebsite.target = '-blank';
+        mWebsite.textContent = `Visit us here.`;
+        mWebsite.href = member.url;
+        mWebsite.target = '-blank';
 
         spotlightCard.appendChild(logo);
-        spotlightCard.appendChild(mName);
         spotlightCard.appendChild(mAd);
-        // spotlightCard.appendChild(mContact);
-        // spotlightCard.appendChild(mWebsite);
+        spotlightCard.appendChild(mWebsite);
 
         spotlights.appendChild(spotlightCard);
-    });
+    }
+    currentIndex = (currentIndex + 3) % members.length;
 }
 
 async function getSpotlights() {
     try {
         const response = await fetch(linksURL);
         const data = await response.json();
+
+        // addition
+        const goldSilverMembers = data.members.filter(member =>
+            member.membership === 'gold' || member.membership === 'silver'
+        );
+
         displaySpotlights(data.members);
         // console.table(data.members);
+
+        // further addition
+        setInterval(() => {
+            displaySpotlights(goldSilverMembers);
+        }, 10000);
+
     } catch (error) {
         console.error("Error fetching data:", error);
     }
