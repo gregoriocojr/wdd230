@@ -1,0 +1,36 @@
+{
+    "events": [
+        {
+            "title": "Live Seminar: Employee Discipline & DOLE Compliance",
+            "image": "chamber/images/event-1.webp",
+            "sched": "June 24 · 9am - June 25 · 5pm PST",
+            "venue": "Unit 1503A 15th floor, West Tower Philippine Stock Exchange Bldg. Pasig City, Metro Manila 1605",
+            "fee": "1000.00 for bronze members, 500.00 for silver members, free for NP and gold members",
+            "desc": "Most employers in general prefer not to discipline their employees because it is unpleasant. Nevertheless, having a disciplinary policy in the workplace is indispensable. Discipline is important because employers expect a certain type of behavior from their employees at work. Employers cannot achieve the goals they set out if their employees are problematic and cannot be relied upon to deliver productive outcome."
+        },
+        {
+            "title": "Basic PowerBI",
+            "image": "chamber/images/event-2.webp",
+            "sched": "Saturday, June 1 · 9am - 4pm",
+            "venue": "222 Vivaldi Residences, 628 EDSA c.or Aurora Blvd Quezon City, 1109",
+            "fee": "Free",
+            "desc": "This training includes a thorough review of the basics of MS Power BI in connecting and transforming data, and presenting using charts/visuals."
+        },
+        {
+            "title": "Conquer ADHD Procrastination Free 5-Day Challenge for Entrepreneurs",
+            "image": "chamber/images/event-3.webp",
+            "sched": "April 9 · 12am - April 13 · 1:30am",
+            "venue": "Online",
+            "fee": "Free",
+            "desc": "Learn how to beat ADHD procrastination with this free 5-day challenge, creating specifically for current and future entrepreneurs."
+        },
+        {
+            "title": "Advanced MS Excel Training",
+            "image": "chamber/images/event-4.webp",
+            "sched": "Saturday, May 11 · 9am - 4pm",
+            "venue": "222 Vivaldi Residences, 628 EDSA c.or Aurora Blvd Quezon City, 1109",
+            "fee": "2000.00 for bronze members, 1500.00 for silver members, 1000.00 for NP and gold members",
+            "desc": "This training will review and strengthen the basics of Excel and enhance this further with knowledge of advanced functions and tools of the program."
+        }
+    ]
+}
