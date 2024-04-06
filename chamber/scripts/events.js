@@ -1,4 +1,4 @@
-const linksURL = "https://gregoriocojr.github.io/wdd230/chamber/data/events.json";
+const linkEvents = "https://gregoriocojr.github.io/wdd230/chamber/data/events.json";
 const events = document.querySelector(".events");
 
 const displayEvents = (events) => {
@@ -36,7 +36,7 @@ const displayEvents = (events) => {
 
 async function getEvents() {
     try {
-        const response = await fetch(linksURL);
+        const response = await fetch(linkEvents);
         const data = await response.json();
         // displayEvents(data.members);
         console.table(data.members);
