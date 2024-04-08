@@ -136,12 +136,13 @@ main {
 
 .cta {
     position: absolute;
-    top: 45%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, 70%);
     background-color: rgba(255, 255, 255, 0.8);
     padding: 2rem;
     text-align: center;
+    border: none;
 }
 
 .cta h2 {
@@ -181,14 +182,31 @@ main {
     }
 }
 
+.events {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.events section {
+    display: inline;
+    border: none;
+}
+
+.events img {
+    box-shadow: 0 0 50px #333;
+}
+
+.events #label {
+    font-weight: bold;
+}
+
 .events-weather {
     display: inline;
-    text-align: center;
 }
 
 .events,
 .weather {
-    padding: 20px;
+    padding: 10px;
     background-color: var(--secondary-color);
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -198,6 +216,11 @@ main {
     display: flex;
     align-items: center;
     font-weight: bold;
+}
+
+.current-weather #todayW {
+    color: blue;
+    font-weight: lighter;
 }
 
 .current-weather .temp,
@@ -227,7 +250,8 @@ main {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.spotlights img {
+.spotlights img,
+.events img {
     animation: fade 5s ease forwards;
     box-shadow: 0 0 50px #333;
     margin: 20px auto;
@@ -587,6 +611,7 @@ section {
 .list section:nth-child(even) {
     background-color: white;
 }
+
 /* end of directory */
 
 /* start of banner */
@@ -612,4 +637,5 @@ section {
 .close-btn:hover {
     color: #721c24;
 }
+
 /* end of banner */

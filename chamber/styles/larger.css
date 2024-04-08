@@ -59,14 +59,34 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    /* .spotlight {
-        flex: 1;
-        padding: 20px;
-        background-color: #f0f0f0;
-        border-radius: 2px;
-    } */
-
     .benefitsContainer {
+        display: block;
+    }
+
+    .cta {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, 70%);
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .events {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .events section {
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .events img {
+        box-shadow: 0 0 50px #333;
+        max-width: 100%;
         display: block;
     }
 }

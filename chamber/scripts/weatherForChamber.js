@@ -7,7 +7,7 @@ const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=14.4297&lon=12
 
 function displayResults(data) {
     const current = data.list[0];
-    currentTempElement.innerHTML = `<span style="font-weight: bolder; color: darkblue;">Today</span>: ${current.main.temp}\u00B0F`;
+    currentTempElement.innerHTML = `<span id="todayW">Today</span>: ${current.main.temp}\u00B0F`;
     const iconsrc = `https://openweathermap.org/img/w/${current.weather[0].icon}.png`;
     currentIconElement.setAttribute('src', iconsrc);
     currentIconElement.setAttribute('alt', current.weather[0].description);
