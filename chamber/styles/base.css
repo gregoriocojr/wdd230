@@ -643,3 +643,18 @@ section {
 }
 
 /* end of banner */
+
+
+/* discover page */
+.discover .cards p {
+    padding: 5px;
+}
+
+.discover p:first-of-type:first-letter {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+/* .discover p:not(:first-of-type) {
+    display: none;
+} */
