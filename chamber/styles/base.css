@@ -192,6 +192,10 @@ main {
     border: none;
 }
 
+.events p {
+    padding: 5px;
+}
+
 .events img {
     box-shadow: 0 0 50px #333;
 }
